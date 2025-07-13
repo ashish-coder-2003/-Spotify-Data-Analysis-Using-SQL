@@ -63,11 +63,11 @@ In advanced stages, the focus shifts to improving query performance. Some optimi
 ---
 
 ## 15 Practice Questions
-
+```sql
 ### Easy Level
 1. Retrieve the names of all tracks that have more than 1 billion streams.
 
-   select count(track) from spotify
+select count(track) from spotify
 where stream>1000000000;
 
 2. List all albums along with their respective artists.
@@ -174,3 +174,4 @@ select
  highest_energy - lowest_energy as energy_diff
 from cte
 order by 2 desc;
+```
